@@ -1,0 +1,5 @@
+comando equivalente ao chmod 400 para o Windows, só trocar o nome de sua chave e colocar no powershell
+
+icacls.exe iac-alura.pem /reset
+icacls.exe iac-alura.pem /grant:r "$($env:username):(r)"
+icacls.exe iac-alura.pem /inheritance:r
